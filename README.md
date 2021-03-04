@@ -4,7 +4,7 @@
 
 ### Purpose
 
-During the Module practice, we have used VBA to help Steve to create a workbook by analyzing green stock data. This analysis was focus on evaluating the return, the difference between the ending prices and the starting prices, in the analysis year of selection for every stock in the dataset. During the analysis, we drafted a VBA script used nested For Loop to calculate the values, which met our initial purpose. However, the efficiency for a VBA script is highly depends on how to process the data. We are going to refactor the VBA script to speed up the process.  
+During the Module practice, we have used VBA to help Steve to create a workbook by analyzing the green stock data. This analysis was focus on evaluating the return, the difference between the ending prices and the starting prices, in the analysis year of selection for every stock in the dataset. During the analysis, we drafted a VBA script used nested For Loop to calculate the values, which met our initial purpose. However, the efficiency for a VBA script is highly depends on how to process the data. We are going to refactor the VBA script to speed up the process.  
 
 ## Analysis
 
@@ -119,4 +119,4 @@ There are lots of factors that will affect the efficiency of a program.  The gre
 
 2.	Size and structure of the data:
 
-    The size of data will be another factor that affect the choice of the way of programming. The green stock data is small and requested to create very limited variables. Both     initial and refactored script could complete within 1 second. When processing large size of data, we need to consider the structure of the data and the purpose of the           analysis, nested loops might be necessary for processing the data in sections. Under this circumstance, simple loop might not be a better choice. 
+    The size of data will be another factor that affect the choice of the way of programming. The green stock data is small and requested to create very limited variables. Both     initial and refactored script could complete within 1 second. When processing large size of data, we need to consider the structure of the data and the purpose of the           analysis, nested loops might be necessary for processing the data in sections. Given the size of the data that need to be processed, simple loop might not be a better choice. 
