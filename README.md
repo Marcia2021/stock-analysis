@@ -101,7 +101,7 @@ In the meantime, we were able to collect the running time for each year:
 
 The initial and refactored VBA script are very similar. The major difference is how to loop though the data. 
 
-In the initial script we used the nested For loop which has the loop for tickers as the first layer, then the loop for rows of the data as the second layer. This means when creating the outcome variables for each ticker, the code will loop through the whole data multiple times. Additionally, the initial script included the output step inside the same loop, which requested to reference to the worksheet multiple times. This set up will slow down the process.
+In the initial script used the nested For loop which has the loop for tickers as the first layer, then the loop for rows of the data as the second layer. This means when creating the outcome variables for each ticker, the code will loop through the whole data multiple times. Additionally, the initial script included the output step inside the same loop, which requested to reference to the worksheet multiple times. This set up will slow down the process.
 
 In the refactored script, we created an index variable and arrays to store the values for each outcome variable before loop through the data. Then used the index variable by incrementing the value to the largest number of the array to loop though the data once to create all the outcome variables. Additionally, created a separate For loop to output the outcomes to the final table in the worksheet, which requested to reference to the worksheet only one time. 
 
@@ -114,7 +114,9 @@ From the table above, it is obvious that the refactored script runs faster than 
 There are lots of factors that will affect the efficiency of a program.  The green stock data only contains little over 3,000 rows of records. When dealing with larger data, efficiency of the program becomes important. 
 
 1.	The complexity of the program:
-According to the purpose of an analysis and the structure of the data single layer loop and nested loop will be performed differently. For the green stock data analysis, compared to nested For Loop, single layer of loop will reduce the time of execution. In the meantime, when it is applicable separate loops will simplify the program and improve the efficiency of execution.
+
+    According to the purpose of an analysis and the structure of the data single layer loop and nested loop will be performed differently. For the green stock data analysis,         compared to nested For Loop, single layer of loop will reduce the time of execution. In the meantime, when it is applicable separate loops will simplify the program and         improve the efficiency of execution.
 
 2.	Size and structure of the data:
-The size of data will be another factor that affect the choice of the way of programming. The green stock data is small and requested to create very limited variables. Both initial and refactored script could complete within 1 second. When processing large size of data, we need to consider the structure of the data and the purpose of the analysis, nested loops might be necessary for processing the data in sections. Under this circumstance, simple loop might not be a better choice. 
+
+    The size of data will be another factor that affect the choice of the way of programming. The green stock data is small and requested to create very limited variables. Both     initial and refactored script could complete within 1 second. When processing large size of data, we need to consider the structure of the data and the purpose of the           analysis, nested loops might be necessary for processing the data in sections. Under this circumstance, simple loop might not be a better choice. 
